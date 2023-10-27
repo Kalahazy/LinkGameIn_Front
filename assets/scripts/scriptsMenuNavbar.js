@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (isLoggedIn) {   // Opciones para usuarios con sesión iniciada
         logo.innerHTML = `
             <a class="navbar-brand" href="./dashBoard.html">
-                <img src="./assets/images/logoBlanco.png" alt="logo" class="logo">
+                <img src="../assets/images/logoBlanco.png" alt="logo" class="logo">
             </a>
             `;
         profileImg.innerHTML = `
@@ -113,40 +113,40 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             const profile = document.getElementById('profile');
             profile.addEventListener('click', function (event) {
-                window.location.href = "./pages/profile.html";
+                window.location.href = "../pages/profile.html";
             });
             const aboutUs = document.getElementById('aboutUs');
             aboutUs.addEventListener('click', function (event) {
-                window.location.href = "./pages/AboutUs.html";
+                window.location.href = "../pages/AboutUs.html";
             });
             const termsConds = document.getElementById('termsConds');
             termsConds.addEventListener('click', function (event) {
-                window.location.href = "./pages/Terminosycondiciones.html";
+                window.location.href = "../pages/Terminosycondiciones.html";
             });
             const contactUs = document.getElementById('contactUs');
             contactUs.addEventListener('click', function (event) {
-                window.location.href = "./pages/contactanos.html";
+                window.location.href = "../pages/contactanos.html";
             });
             const chat = document.getElementById('chat');
             chat.addEventListener('click', function (event) {
-                window.location.href = "./chat/index.php";
+                window.location.href = "../chat/index.php";
             });
             const logout = document.getElementById('logout');
             logout.addEventListener('click', function (event) {
                 event.preventDefault();
-                window.location.href = "./pages/login.html";
+                window.location.href = "../pages/login.html";
                 localStorage.removeItem('log');
                 loginComproved();
             });
             
     } else { // Opciones para usuarios sin sesión iniciada
         logo.innerHTML = `
-            <a class="navbar-brand" href="/index.html">
-            <img src="./assets/images/logoBlanco.png" alt="logo" class="logo">
+            <a class="navbar-brand" href="../index.html">
+            <img src="../assets/images/logoBlanco.png" alt="logo" class="logo">
             </a>
             `;
         profileImg.innerHTML = `
-            <img src="./assets/images/loginBlanco.png" alt="" class="perfil" id="profile-img">
+            <img src="../assets/images/loginBlanco.png" alt="" class="perfil" id="profile-img">
             `;
         configMenu.innerHTML = `
             <ul>
@@ -202,24 +202,24 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             const aboutUs = document.getElementById('aboutUs');
             aboutUs.addEventListener('click', function (event) {
-                window.location.href = "./pages/AboutUs.html";
+                window.location.href = "../pages/AboutUs.html";
             });
             const termsConds = document.getElementById('termsConds');
             termsConds.addEventListener('click', function (event) {
-                window.location.href = "./pages/Terminosycondiciones.html";
+                window.location.href = "../pages/Terminosycondiciones.html";
             });
             const contactUs = document.getElementById('contactUs');
             contactUs.addEventListener('click', function (event) {
-                window.location.href = "./pages/contactanos.html";
+                window.location.href = "../pages/contactanos.html";
             });
             const register = document.getElementById('register');
             register.addEventListener('click', function (event) {
-                window.location.href = "./pages/registrarUsuario.html";
+                window.location.href = "../pages/registrarUsuario.html";
             });
             const login = document.getElementById('login');
             login.addEventListener('click', function (event) {
                 event.preventDefault();
-                window.location.href = "./pages/login.html";
+                window.location.href = "../pages/login.html";
             });
     }
 
