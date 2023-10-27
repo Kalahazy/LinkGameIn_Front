@@ -141,12 +141,12 @@ document.addEventListener('DOMContentLoaded', () => {
             
     } else { // Opciones para usuarios sin sesión iniciada
         logo.innerHTML = `
-            <a class="navbar-brand" href="/index.html">
-            <img src="/assets/images/loginBlanco.png" alt="logo" class="logo">
+            <a class="navbar-brand" href="index.html">
+            <img src="assets/images/loginBlanco.png" alt="logo" class="logo">
             </a>
             `;
         profileImg.innerHTML = `
-            <img src="/assets/images/loginBlanco.png" alt="" class="perfil" id="profile-img">
+            <img src="assets/images/loginBlanco.png" alt="" class="perfil" id="profile-img">
             `;
         configMenu.innerHTML = `
             <ul>
