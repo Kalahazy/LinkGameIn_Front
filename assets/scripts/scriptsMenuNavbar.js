@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (isLoggedIn) {   // Opciones para usuarios con sesión iniciada
         logo.innerHTML = `
             <a class="navbar-brand" href="./dashBoard.html">
-                <img src="../assets/images/logoBlanco.png" alt="logo" class="logo">
+                <img src="./assets/images/logoBlanco.png" alt="logo" class="logo">
             </a>
             `;
         profileImg.innerHTML = `
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li id="profile" style="cursor: pointer;">
                     <div class="row d-flex justify-content-between">
                         <div class="col-2">
-                            <img src="../assets/images/perfil.jpg" alt="">
+                            <img src="./assets/images/perfil.jpg" alt="">
                         </div>
                         <div class="col-10">
                             <span>Perfil</span>
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li id="aboutUs" style="cursor: pointer;">
                     <div class="row d-flex justify-content-between">
                         <div class="col-2">
-                            <img src="../assets/images/aboutUs.svg" alt="">
+                            <img src="./assets/images/aboutUs.svg" alt="">
                         </div>
                         <div class="col-10">
                             <span>Acerca de nosotros</span>
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li id="termsConds" style="cursor: pointer;">
                     <div class="row d-flex justify-content-between">
                         <div class="col-2">
-                            <img src="../assets/images/terminos.svg" alt="">
+                            <img src="./assets/images/terminos.svg" alt="">
                         </div>
                         <div class="col-10">
                             <span>Términos y condiciones</span>
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li id="contactUs" style="cursor: pointer;">
                     <div class="row d-flex justify-content-between">
                         <div class="col-2">
-                            <img src="../assets/images/contactanos.svg" alt="">
+                            <img src="./assets/images/contactanos.svg" alt="">
                         </div>
                         <div class="col-10">
                             <span>Contáctanos</span>
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li id="chat" style="cursor: pointer;">
                     <div class="row d-flex justify-content-between">
                         <div class="col-2">
-                            <img src="../assets/images/comentario-sonrisa (1).svg" alt="">
+                            <img src="./assets/images/comentario-sonrisa (1).svg" alt="">
                         </div>
                         <div class="col-10">
                             <span>LinkGameIn Chat</span>
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li id="logout" style="cursor: pointer;">
                     <div class="row d-flex justify-content-between">
                         <div class="col-2">
-                            <img src="../assets/images/cerrarsesion.svg" alt="">
+                            <img src="./assets/images/cerrarsesion.svg" alt="">
                         </div>
                         <div class="col-10">
                             <span>Cerrar sesión</span>
@@ -113,28 +113,28 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             const profile = document.getElementById('profile');
             profile.addEventListener('click', function (event) {
-                window.location.href = "../pages/profile.html";
+                window.location.href = "./pages/profile.html";
             });
             const aboutUs = document.getElementById('aboutUs');
             aboutUs.addEventListener('click', function (event) {
-                window.location.href = "../pages/AboutUs.html";
+                window.location.href = "./pages/AboutUs.html";
             });
             const termsConds = document.getElementById('termsConds');
             termsConds.addEventListener('click', function (event) {
-                window.location.href = "../pages/Terminosycondiciones.html";
+                window.location.href = "./pages/Terminosycondiciones.html";
             });
             const contactUs = document.getElementById('contactUs');
             contactUs.addEventListener('click', function (event) {
-                window.location.href = "../pages/contactanos.html";
+                window.location.href = "./pages/contactanos.html";
             });
             const chat = document.getElementById('chat');
             chat.addEventListener('click', function (event) {
-                window.location.href = "../chat/index.php";
+                window.location.href = "./chat/index.php";
             });
             const logout = document.getElementById('logout');
             logout.addEventListener('click', function (event) {
                 event.preventDefault();
-                window.location.href = "../pages/login.html";
+                window.location.href = "./pages/login.html";
                 localStorage.removeItem('log');
                 loginComproved();
             });
@@ -202,24 +202,24 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             const aboutUs = document.getElementById('aboutUs');
             aboutUs.addEventListener('click', function (event) {
-                window.location.href = "../pages/AboutUs.html";
+                window.location.href = "./pages/AboutUs.html";
             });
             const termsConds = document.getElementById('termsConds');
             termsConds.addEventListener('click', function (event) {
-                window.location.href = "../pages/Terminosycondiciones.html";
+                window.location.href = "./pages/Terminosycondiciones.html";
             });
             const contactUs = document.getElementById('contactUs');
             contactUs.addEventListener('click', function (event) {
-                window.location.href = "../pages/contactanos.html";
+                window.location.href = "./pages/contactanos.html";
             });
             const register = document.getElementById('register');
             register.addEventListener('click', function (event) {
-                window.location.href = "../pages/registrarUsuario.html";
+                window.location.href = "./pages/registrarUsuario.html";
             });
             const login = document.getElementById('login');
             login.addEventListener('click', function (event) {
                 event.preventDefault();
-                window.location.href = "../pages/login.html";
+                window.location.href = "./pages/login.html";
             });
     }
 
