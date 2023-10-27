@@ -142,18 +142,18 @@ document.addEventListener('DOMContentLoaded', () => {
     } else { // Opciones para usuarios sin sesión iniciada
         logo.innerHTML = `
             <a class="navbar-brand" href="../index.html">
-            <img src="../assets/images/logoBlanco.png" alt="logo" class="logo">
+            <img src="./assets/images/logoBlanco.png" alt="logo" class="logo">
             </a>
             `;
         profileImg.innerHTML = `
-            <img src="../assets/images/loginBlanco.png" alt="" class="perfil" id="profile-img">
+            <img src="./assets/images/loginBlanco.png" alt="" class="perfil" id="profile-img">
             `;
         configMenu.innerHTML = `
             <ul>
                 <li id="aboutUs" style="cursor: pointer;">
                     <div class="row d-flex justify-content-between">
                         <div class="col-2">
-                            <img src="../assets/images/aboutUs.svg" alt="">
+                            <img src="./assets/images/aboutUs.svg" alt="">
                         </div>
                     <div class="col-10">
                         <span>Acerca de nosotros</span>
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li id="termsConds" style="cursor: pointer;">
                     <div class="row d-flex justify-content-between">
                         <div class="col-2">
-                            <img src="../assets/images/terminos.svg" alt="">
+                            <img src="./assets/images/terminos.svg" alt="">
                         </div>
                         <div class="col-10">
                             <span>Términos y condiciones</span>
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li id="contactUs" style="cursor: pointer;">
                     <div class="row d-flex justify-content-between">
                         <div class="col-2">
-                            <img src="../assets/images/contactanos.svg" alt="">
+                            <img src="./assets/images/contactanos.svg" alt="">
                         </div>
                         <div class="col-10">
                             <span>Contáctanos</span>
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li id="register" style="cursor: pointer;">
                     <div class="row d-flex justify-content-between">
                         <div class="col-2">
-                            <img src="../assets/images/publicaciones.svg" alt="">
+                            <img src="./assets/images/publicaciones.svg" alt="">
                         </div>
                         <div class="col-10">
                             <span>Registrarse</span>
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li id="login" style="cursor: pointer;">
                     <div class="row d-flex justify-content-between">
                         <div class="col-2">
-                            <img src="../assets/images/cerrarsesion.svg" alt="">
+                            <img src="./assets/images/cerrarsesion.svg" alt="">
                         </div>
                         <div class="col-10">
                             <span>Iniciar sesión</span>
