@@ -38,12 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (isLoggedIn) {   // Opciones para usuarios con sesión iniciada
         logo.innerHTML = `
-            <a class="navbar-brand" href="./dashBoard.html">
-                <img src="./assets/images/logoBlanco.png" alt="logo" class="logo">
+            <a class="navbar-brand" href="/pages/dashBoard.html">
+                <img src="/assets/images/logoBlanco.png" alt="logo" class="logo">
             </a>
             `;
         profileImg.innerHTML = `
-            <img src="./assets/images/perfil.jpg" alt="" class="border border-dark perfil" id="profile-img">
+            <img src="/assets/images/perfil.jpg" alt="" class="border border-dark perfil" id="profile-img">
             <span class="position-absolute bottom-0 start-0 p-2 bg-success border border-dark rounded-circle"></span>
             `;
         configMenu.innerHTML = `
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             const profile = document.getElementById('profile');
             profile.addEventListener('click', function (event) {
-                window.location.href = "./pages/profile.html";
+                window.location.href = "/pages/profile.html";
             });
             const aboutUs = document.getElementById('aboutUs');
             aboutUs.addEventListener('click', function (event) {
@@ -141,12 +141,12 @@ document.addEventListener('DOMContentLoaded', () => {
             
     } else { // Opciones para usuarios sin sesión iniciada
         logo.innerHTML = `
-            <a class="navbar-brand" href="./index.html">
-            <img src="./assets/images/logoBlanco.png" alt="logo" class="logo">
+            <a class="navbar-brand" href="/index.html">
+            <img src="/assets/images/loginBlanco.png" alt="logo" class="logo">
             </a>
             `;
         profileImg.innerHTML = `
-            <img src="./assets/images/loginBlanco.png" alt="" class="perfil" id="profile-img">
+            <img src="/assets/images/loginBlanco.png" alt="" class="perfil" id="profile-img">
             `;
         configMenu.innerHTML = `
             <ul>
