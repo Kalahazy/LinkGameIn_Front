@@ -113,19 +113,19 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             const profile = document.getElementById('profile');
             profile.addEventListener('click', function (event) {
-                window.location.href = "/profile.html";
+                window.location.href = "./profile.html";
             });
             const aboutUs = document.getElementById('aboutUs');
             aboutUs.addEventListener('click', function (event) {
-                window.location.href = "/AboutUs.html";
+                window.location.href = "./AboutUs.html";
             });
             const termsConds = document.getElementById('termsConds');
             termsConds.addEventListener('click', function (event) {
-                window.location.href = "/Terminosycondiciones.html";
+                window.location.href = "./Terminosycondiciones.html";
             });
             const contactUs = document.getElementById('contactUs');
             contactUs.addEventListener('click', function (event) {
-                window.location.href = "/contactanos.html";
+                window.location.href = "./contactanos.html";
             });
             const chat = document.getElementById('chat');
             chat.addEventListener('click', function (event) {
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const logout = document.getElementById('logout');
             logout.addEventListener('click', function (event) {
                 event.preventDefault();
-                window.location.href = "/login.html";
+                window.location.href = "./login.html";
                 localStorage.removeItem('log');
                 loginComproved();
             });
@@ -202,24 +202,24 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             const aboutUs = document.getElementById('aboutUs');
             aboutUs.addEventListener('click', function (event) {
-                window.location.href = "/AboutUs.html";
+                window.location.href = "./AboutUs.html";
             });
             const termsConds = document.getElementById('termsConds');
             termsConds.addEventListener('click', function (event) {
-                window.location.href = "/Terminosycondiciones.html";
+                window.location.href = "./Terminosycondiciones.html";
             });
             const contactUs = document.getElementById('contactUs');
             contactUs.addEventListener('click', function (event) {
-                window.location.href = "/contactanos.html";
+                window.location.href = "./contactanos.html";
             });
             const register = document.getElementById('register');
             register.addEventListener('click', function (event) {
-                window.location.href = "/registrarUsuario.html";
+                window.location.href = "./registrarUsuario.html";
             });
             const login = document.getElementById('login');
             login.addEventListener('click', function (event) {
                 event.preventDefault();
-                window.location.href = "/login.html";
+                window.location.href = "./login.html";
             });
     }
 
