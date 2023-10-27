@@ -1,0 +1,640 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000
+}
+
+/* ~~ NavBar Styles ~~ */
+.custom-navbar {
+    background-color: #141414;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+   /* height: 55.25px;*/
+    
+
+}
+.logo {
+    /* Estilo para el logo en la barra de navegación */
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+    text-align: left;
+}
+.containerProfile {
+    /* Estilo para el contenedor del perfil en la barra de navegación */
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.perfil {
+    /* Estilo para la imagen de perfil en la barra de navegación */
+    width: 45px;
+    border-radius: 50%
+    
+}
+/* Estilo para el menú de configuración */
+.config-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #000000;
+    box-shadow: 0 0 10px #e42527;
+    z-index: 1;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.config-menu ul {
+    /* Estilo para la lista del menú de configuración */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 260px;
+}
+.config-menu ul li {
+    /* Estilo para los items del menú de configuración */
+    padding: 10px;
+    text-align: left;
+    align-items: center;
+    color: #ffffff;
+}
+.config-menu ul li:hover {
+    /* color de fondo al pasar el ratón */
+    background-color: #e4252846;
+    border-radius: 5px;
+    margin: 5px;
+}
+.config-menu ul li a {
+    /* Estilo para los links del menú de configuración */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: large;
+}
+.config-menu ul li img {
+    /* Estilo para los iconos del menú de configuración */
+    height: 20px;
+    margin-bottom: 5px;
+}
+.config-menu ul hr {
+    /* color de fondo al pasar el ratón */
+    margin: 5px 0;
+    border: solid 2px #141414;
+    margin-inline: 10px 30px;
+}
+/* ~~ End NavBar Styles ~~ */
+
+
+/* Estilos para los botones */
+
+button {
+    height: 30px;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+/* Estilos para las imágenes de perfil de amigos */
+.friend-img {
+    width: 50px;
+    /* Ancho de las imágenes de perfil */
+    height: 50px;
+    /* Altura de las imágenes de perfil */
+    margin-right: 10px;
+    /* Espacio entre la imagen y el texto */
+    border: 2px solid #ccc;
+    /* Borde alrededor de las imágenes */
+    border-radius: 50%;
+    /* Bordes redondeados para que sean circulares */
+}
+
+/* Estilos para el contenedor de perfil */
+.containerProfile {
+    display: flex;
+    align-items: center;
+    
+    /* Espacio inferior entre el perfil y los botones */
+}
+
+/* Estilos para el nombre de usuario en el perfil */
+#profile-img {
+  
+    border: 2px solid #ccc;
+    /* Borde alrededor de la imagen de perfil */
+    border-radius: 50%;
+    /* Bordes redondeados para que sea circular */
+   
+} 
+
+/* Estilos para los elementos de la lista de amigos */
+.dash-item {
+    margin-bottom: 10px;
+    list-style: none;
+    /* Espacio entre elementos de la lista */
+}
+
+.nick {
+    /*Estilos nombre de perdfil*/
+    color: #ffffff;
+}
+
+.menudash {
+    height: fit-content;
+    position: sticky;
+    top: 0;
+}
+
+#menudash {
+    background-color: #141414;
+    /* Color de fondo del navbar /
+    padding: 10px;
+    / Espacio interno del navbar */
+    width: 250px;
+    height: 100%;
+    float: left;
+}
+
+
+#menudash ul li {
+    padding: 10px;
+    text-align: left;
+    align-items: center;
+    color: #ffffff;
+    height: 150%;
+    font-family: 'Poppins';
+    color: #8a8a8a;
+}
+
+#news-section {
+    background-color: #141414;
+    padding: 10px; /* Reduce el relleno para que se parezca al menú */
+    position: sticky;
+    top: 0;
+
+}
+
+#noticias {
+    color: #ffffff;
+}
+
+.noticia {
+    margin: 10px 0; 
+    padding: 10px;
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #000000; /* Color de fondo similar al menú */
+
+} 
+
+.noticia h4 {
+    font-size: 1.2rem;
+    color: #8b1a1b;
+    margin-bottom: 10px;
+}
+
+.noticia p {
+    color: #5d5d5d;
+}
+
+#noti{
+    color: #8a8a8a;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px; /* Agrega espacio interno para que se parezca al menú */
+}
+
+a{
+    text-decoration: none;
+    color: #8a8a8a;
+
+}
+
+.dash-item a {
+    color: #8a8a8a;
+    font-family: 'Poppins';
+}
+
+.nav-link:hover {
+    color: #e42527;
+    /* Cambia el color del texto del enlace a rojo al pasar el mouse sobre él */
+}
+
+
+#cuadro-publicacion {
+    color: #8a8a8a;
+    text-align: right;
+    align-items: center;
+    margin-right: 40px;
+    margin-top: 20px;
+    background-color: #5d5d5d;
+
+}
+
+#news-feed .publicacion {
+    align-items: center;
+    margin-right: 40px;
+    margin-top: 20px;
+    background-color: #141414;
+    color: #ffffff;
+}
+
+.cont-photo-nick {
+
+    width: 150px;
+    overflow: hidden;
+
+}
+
+.nickname-dash {
+    float: right;
+    justify-content: right;
+
+
+}
+
+.photo-perfil {
+    float: left;
+    justify-content: left;
+    width: 60px;
+    /* Ancho de las imágenes de perfil */
+    height: 60px;
+    /* Altura de las imágenes de perfil */
+    margin-right: 10px;
+    /* Espacio entre la imagen y el texto */
+    border: 2px solid #ccc;
+    /* Borde alrededor de las imágenes */
+    border-radius: 50%;
+    /* Bordes redondeados para que sean circulares */
+
+}
+
+.cont-photo {
+    float: left;
+    justify-content: left;
+    top: 0%;
+}
+
+.cont-nickname {
+    margin-top: 20px;
+    text-align: right;
+    justify-content: center;
+    color: #ffffff;
+
+}
+
+#amigos-activos {
+    color: #ffffff;
+}
+
+.escribir-publicacion {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    max-width: 900px;
+    background-color: #353535;
+    height: fit-content;
+    padding: 5px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+	box-shadow: 0 0 10px #e42527;
+}
+
+.text-content {
+    margin: 20px;
+    width: 80%;
+    border-radius: 20px;
+    background-color: #5d5d5d;
+
+}
+
+.bot1 {
+    text-align: right;
+}
+
+.bot2 {
+    background-color: #e42527;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+}
+
+.img-perfil h4 {
+    color: white;
+}
+
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    /* Ancho de las tarjetas */
+    height: auto;
+    margin: 20px;
+    margin-top: 50px;
+    /* Centra las tarjetas horizontalmente */
+    background-color: #141414;
+    border-color: #a8a8a8;
+    padding: 10px;
+    border-radius: 5%;
+	border:2px solid #141414; 
+	box-shadow: 0 0 10px #5d5d5d;}
+
+
+.card-title {
+    font-size: 2rem;
+    /* Tamaño de fuente del título */
+    font-family: 'Poppins';
+    color: #ffffff;
+}
+
+.card-text {
+    font-size: 1rem;
+    /* Tamaño de fuente del texto */
+    font-family: 'Montserrat';
+    color: white;
+}
+
+.containerprofile h4,
+p {
+    color: white;
+}
+
+.content-card p {
+    color: white;
+}
+
+.content-card img {
+    width: 100%;
+    max-height: 400px;
+    border-radius: 5%;
+    margin-right: 20px;
+}
+
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+
+}
+
+.card .social-icon {
+    text-align: center;
+
+}
+
+.card .social-icon img {
+    text-align: center;
+    margin-top: 20px;
+    margin-inline: 55px;
+}
+
+.containerprofile {
+    /* Estilo para el contenedor del perfil en la barra de navegación */
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.profile-img {
+    /* Estilo para el contenedor del perfil en la barra de navegación */
+    margin: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%
+}
+
+
+
+
+/*Inicio Modal*/
+.modal {
+    display: none;
+    /*position: absolute; /* Cambiar a "fixed" si necesitas que el modal siga visible al desplazarse la página */
+    top: 50%; /* Alineado verticalmente en el centro */
+    left: 50%; /* Alineado horizontalmente en el centro */
+    transform: translate(-50%, -50%); /* Centra el modal */
+    max-width: 700px;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1a1a1a;
+    max-height: 390px;
+    border-radius: 15px;
+}
+.modal-content #close-modal {
+    width: 5%;
+    padding: 0;
+    position: relative;
+    left: 98%;
+    transform: translate(-100%);
+    margin: 10px 0 10px 0;
+    border-radius: 20%;
+    background-color: #5d5d5d;
+    border-color: #000000b7;
+}
+.modal-content #close-modal:hover {
+    background-color: #ff000074;
+    border-color: #000000b7;
+}
+.modal-content #post-text {
+    width: 95%;
+    max-height: 200px; /* Altura máxima */
+    min-height: 200px; /* Altura mínima */
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #5d5d5d;
+    border-color: #000000b7;
+    color: white;
+    font-size: 20px;
+}
+#imagePreview {
+    max-height: 120px;
+    width: max-content;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.containerButtonsModal {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 10px 0;
+    padding: 0 10px;
+    position: relative;
+    left: 100%;
+    bottom: 50%;
+    transform: translate(-110%);
+}
+/* Cambiar la posición cuando haya una imagen previa */
+.with-image {
+    bottom: 90px;
+}
+.custom-file-input {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.custom-file-input img {
+    width: 50px;
+    margin: 0 10px 0 0;
+}
+.custom-file-input input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px; /* Esto puede variar según tus preferencias */
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.containerButtonsModal #post-button {
+    border-radius: 10px;
+    height: 40px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: none; /* Inicialmente oculto */
+}
+/*Fin Modal*/
+
+.containerMadePubli {
+    height: 120px;
+}
+#madePubliBtn {
+    background-color: #8a8a8a80; /* Color de fondo */
+    color: white; /* Color del texto */
+    font-size: 20px;
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Borde redondeado */
+    padding: 10px 20px; /* Espacio interno */
+    text-align: left; /* Alineación del texto a la izquierda */
+    width: 90%; /* Ancho */
+    height: 100px; /* Alto */
+    margin: 10px auto; /* Centrar horizontalmente */
+    display: flex; /* Habilitar el modelo de caja flexible */
+}
+#madePubliBtn:hover {
+    background-color: #8a8a8ae3; /* Cambia el fondo del botón a rojo al pasar el mouse */
+    color: white; /* Cambia el color del texto a blanco al pasar el mouse */
+}
+.containerButtons {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 520px;
+    bottom: 55px;
+}
+.containerButtons img {
+    width: 50px;
+}
+
+#contenedorDePublicaciones {
+    margin-top: 20px;
+}
+#chat-button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+#cahtbut{
+    text-decoration: none;
+}
+
+
+/* Publicaciones */
+.containerPubli {
+    background-color: #141414;
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.contPersonalInfoPubli {
+   /* display: flex;
+    justify-content: left;
+    margin-bottom: 5px;
+    padding-left: 10px;*/
+    display:flex;
+    justify-content: space-between;
+
+}
+.imgPerfilPubli {
+    height: 50px;
+    border-radius: 50%;
+}
+.nicknamePrestige {
+    position: relative;
+    left: 20px;
+    bottom: 5px;
+    flex:1;
+}
+.nicknamePubli {
+    font-size: 20px;
+    color: #ffffff;
+}
+.prestigePubli {
+    font-size: 15px;
+    margin: 0;
+   
+}
+.deletePubli {
+    /*position: relative;
+    left: 450px;
+    bottom: 0;
+    width: 40px;
+    height: max-content;*/
+    /*margin-left: 60%;*/
+    width: 40px;
+    height: max-content;
+}
+/*.contTextPubli {
+padding-inline: 15px;
+}*/
+.textPubli {
+    font-size: 25px;
+    color: #ffffff;
+}
+.contImgPubli {
+    margin-top: 10px;
+}
+.imgPubli {
+    width: 100%;
+    border-radius: 5px;
+}
+.contReactions {
+   /* width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 200px; */
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.contReactions img {
+    width: 30px;
+    height: 30px;
+}
+
+

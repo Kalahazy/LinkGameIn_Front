@@ -1,0 +1,282 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Barra de navegación */
+.custom-navbar {
+    background-color: #141414;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.logo { /* Estilo para el logo en la barra de navegación */
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+    text-align: left;
+}
+.containerProfile { /* Estilo para el contenedor del perfil en la barra de navegación */
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.perfil {   /* Estilo para la imagen de perfil en la barra de navegación */
+    width: 45px;
+    border-radius: 50%
+}
+/* Estilo para el menú de configuración */
+.config-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #000000;
+    box-shadow: 0 0 10px #e42527;
+    z-index: 1;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.config-menu ul {   /* Estilo para la lista del menú de configuración */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 260px;
+}
+.config-menu ul li {    /* Estilo para los items del menú de configuración */
+    padding: 10px;
+    text-align: left;
+    align-items: center;
+    color: #ffffff;
+}
+.config-menu ul li:hover {    /* color de fondo al pasar el ratón */
+    background-color: #e4252846;
+    border-radius: 5px;
+    margin: 5px;
+}
+.config-menu ul li a {  /* Estilo para los links del menú de configuración */
+    text-decoration: none;
+    color: #ffffff ;
+    font-size: large;
+}
+.config-menu ul li img{    /* Estilo para los iconos del menú de configuración */
+    height: 20px;
+    margin-bottom: 5px;
+}
+.config-menu ul hr {    /* color de fondo al pasar el ratón */
+    margin: 5px 0;
+    border: solid 2px #141414;
+    margin-inline: 10px 30px;
+}
+/*termiman estilos de navbar*/
+
+
+body { /*ESTILOS DE BODY*/
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Poppins';
+    text-shadow:
+        0 0 10px #5d5d5d,
+        /* Sombra de color rojo */
+
+        0 0 10px #a8a8a8;
+    /* Sombra de color menos rojo :p */
+}
+
+
+
+/*ESTILOS DEL CARRUSEL*/
+#cardCarousel {
+    padding: 20px;
+    /* Añade espaciado interior para separar el carrusel de otros elementos */
+}
+
+.container .card {  /* estilos para container */
+    z-index: 0;
+    /*Add this*/
+    position: relative;
+    background-color: transparent;
+    margin: 20px;
+}
+
+.container .card .face { /*front card*/
+    width: 300px;
+    height: 200px;
+    transition: .4s;
+}
+
+.container .card .face.face1 { /*front card*/
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1 { /*front card*/
+    transform: translateY(0);
+    box-shadow:
+        inset 0 0 60px #00000065,
+        inset 20px 0 80px #0000004e,
+        inset -20px 0 80px #e42527,
+        inset 20px 0 300px rgb(0, 0, 0),
+        inset -20px 0 300px #e42527,
+        0 0 50px #ffffff2f,
+        -10px 0 80px rgb(255, 0, 0),
+        10px 0 80px #a8a8a8;
+}
+
+.container .card .face.face1 .content {
+    opacity: .8;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.container .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.container .card .face.face1 .content i {
+    font-size: 3em;
+    color: rgb(9, 9, 9);
+    display: inline-block;
+}
+
+.container .card .face.face1 .content h3 {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+}
+
+.container .card .face.face1 .content a {
+    transition: .5s;
+}
+
+.container .card .face.face2 {
+    position: relative;
+    background: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .8);
+    transform: translateY(-100px);
+    color: white;
+}
+
+.container .card:hover .face.face2 {
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p,
+a {
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    color: #8a8a8a;
+}
+
+.container .card .face.face2 .content a {
+    text-decoration: none;
+    color: #141414;
+    box-sizing: border-box;
+    outline: 1px dashed #333;
+    padding: 10px;
+    margin: 15px 0 0;
+    display: inline-block;
+}
+
+.container .card .face.face2 .content a:hover {
+    background: #333;
+    color: whitesmoke;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+#vision {
+    width: 500px;
+    height: 400px;
+    padding-left: 30px;
+}
+
+#mision {
+    width: 500px;
+    height: 400px;
+}
+
+h3 {
+    color: #a8a8a8;
+    font-family: 'Poppins';
+    padding: 20px;
+    text-shadow:
+        0 0 10px #ff0000,
+        /* Sombra de color rojo */
+
+        0 0 10px #e42527;
+}
+
+.p-mision {
+    text-align: justify;
+    color: #8a8a8a;
+    font-family: 'Montserrat';
+    font-size: large;
+    padding: 20px;
+    margin: auto;
+}
+
+.p-vision {
+    text-align: justify;
+    color: #8a8a8a;
+    font-family: 'Montserrat';
+    font-size: large;
+    padding: 20px;
+    margin: auto;
+}
+
+
+

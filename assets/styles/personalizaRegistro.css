@@ -1,0 +1,132 @@
+/* Fuentes para todo el documento */
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para el body */
+body {
+    /*background-image: url("../images/hexagon_background_rotated.png");
+    background-size: cover;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #000000;
+}
+
+/* Barra de navegación */
+.custom-navbar {
+    background-color: #141414;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.logo { /* Estilo para el logo en la barra de navegación */
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+    text-align: left;
+}
+.containerProfile { /* Estilo para el contenedor del perfil en la barra de navegación */
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.perfil {   /* Estilo para la imagen de perfil en la barra de navegación */
+    width: 45px;
+    border-radius: 50%
+}
+/* Estilo para el menú de configuración */
+.config-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #000000;
+    box-shadow: 0 0 10px #e42527;
+    z-index: 1;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.config-menu ul {   /* Estilo para la lista del menú de configuración */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 260px;
+}
+.config-menu ul li {    /* Estilo para los items del menú de configuración */
+    padding: 10px;
+    text-align: left;
+    align-items: center;
+    color: #ffffff;
+}
+.config-menu ul li:hover {    /* color de fondo al pasar el ratón */
+    background-color: #e4252846;
+    border-radius: 5px;
+    margin: 5px;
+}
+.config-menu ul li a {  /* Estilo para los links del menú de configuración */
+    text-decoration: none;
+    color: #ffffff ;
+    font-size: large;
+}
+.config-menu ul li img{    /* Estilo para los iconos del menú de configuración */
+    height: 20px;
+    margin-bottom: 5px;
+}
+.config-menu ul hr {    /* color de fondo al pasar el ratón */
+    margin: 5px 0;
+    border: solid 2px #141414;
+    margin-inline: 10px 30px;
+}
+/*termiman estilos de navbar*/
+
+
+
+/* Estilo para el formulario de contacto */
+#form-register2 {
+    max-width: 600px;
+    min-height: 722px;
+    background-color: #141414;
+    border-radius: 20px;
+    padding: 30px 50px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px #e42527;
+    margin-top: 50px;
+}
+
+#title-register2 {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: #a8a8a8;
+}
+
+/* Estilo para el contenedor de la imagen de perfil */
+.image-preview {
+    width: 250px;
+    height: 250px;
+    border: 1px solid transparent;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Estilo para la imagen de perfil */
+.profile-image {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+}
+
+.container-hijo {
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+}
+
+option {
+    background-color: #000000;
+    text-decoration: none !important;
+    color: white;
+}
+

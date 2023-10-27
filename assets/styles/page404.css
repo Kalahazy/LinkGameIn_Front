@@ -1,0 +1,206 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+/* Barra de navegación */
+.custom-navbar {
+    background-color: #141414;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.logo { /* Estilo para el logo en la barra de navegación */
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+    text-align: left;
+}
+.containerProfile { /* Estilo para el contenedor del perfil en la barra de navegación */
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.perfil {   /* Estilo para la imagen de perfil en la barra de navegación */
+    width: 45px;
+    border-radius: 50%
+}
+/* Estilo para el menú de configuración */
+.config-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #000000;
+    box-shadow: 0 0 10px #e42527;
+    z-index: 1;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.config-menu ul {   /* Estilo para la lista del menú de configuración */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 260px;
+}
+.config-menu ul li {    /* Estilo para los items del menú de configuración */
+    padding: 10px;
+    text-align: left;
+    align-items: center;
+    color: #ffffff;
+}
+.config-menu ul li:hover {    /* color de fondo al pasar el ratón */
+    background-color: #e4252846;
+    border-radius: 5px;
+    margin: 5px;
+}
+.config-menu ul li a {  /* Estilo para los links del menú de configuración */
+    text-decoration: none;
+    color: #ffffff ;
+    font-size: large;
+}
+.config-menu ul li img{    /* Estilo para los iconos del menú de configuración */
+    height: 20px;
+    margin-bottom: 5px;
+}
+.config-menu ul hr {    /* color de fondo al pasar el ratón */
+    margin: 5px 0;
+    border: solid 2px #141414;
+    margin-inline: 10px 30px;
+}
+/*termiman estilos de navbar*/
+
+
+/*ESTILOS DE BODY*/
+body { 
+    background-color: #000000;
+    /*background-image: url(/assets/images/backdash.png);*/
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /*background-position: center;
+    /*background-image: url(../images/nes\(1\)\ \(1\).jpg);*/
+    background-size: cover; /*Ajusta el tamaño de fondo para cubrir completamente el elemento padre*/
+    /*background-position: center center; /* Centra la imagen de fondo horizontal y verticalmente */
+    /*background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+}
+
+.conten {
+    margin-top: 100px;
+    font-size: 90px;
+    color: #ffffff;
+    font-family: 'Poppins';
+    text-align: center;
+    align-items: center;
+}
+
+.conten-description {
+    margin-top: 20px;
+}
+
+.error {
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'Poppins';
+    margin-top: 50px;
+}
+
+.conten-error {
+    font-size: 22px;
+    color: #8a8a8a;
+    font-family: 'Montserrat';
+    margin-top: 90px;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Estilos para pantallas pequeñas (menos de 768px de ancho) */
+    .conten {
+        font-size: 10vw; /* Tamaño de fuente más grande para pantallas pequeñas */
+    }
+
+    .conten-description {
+        margin-top: 10%;
+    }
+
+    .error {
+        font-size: 5vw;
+    }
+
+    .conten-error {
+        font-size: 3vw;
+    }
+}
+
+
+
+/*.conten{
+    position: fixed;
+    top: 65px;
+    width: 100%;
+    text-align: center;
+    }*/
+
+.conten-number{
+    font-size: 5.5rem;
+    font-family: 'Poppins';
+    font-weight: 700;
+    top: 10rem;
+    color: #000;
+    text-shadow:
+        0 0 10px #e42527,
+        /* Sombra de color rojo */
+
+        0 0 10px #e42527;
+    /* Sombra de color menos rojo :p */
+    animation: parpadeo 2s linear infinite;
+
+}
+/*
+.conten-error{
+        color: #a8a8a8;
+        width: 50%;
+        margin: 2rem auto;
+        font-family: 'Montserrat';
+}
+
+/*@keyframes animates {
+    0%{
+        transform: translateX(5%);
+    }
+    100%{
+        transform: translateX(-5%);
+    }
+}*/
+
+
+
+
+
+
+/*.backimg {
+    width: 550px;
+    display: block;
+    animation: parpadeo 1s linear infinite;
+    filter: drop-shadow( 5px 5px 10px #000 );
+
+}*/
+
+
+@keyframes parpadeo {
+    0% {
+        background-color: transparent; /* Estado inicial sin fondo */
+    } 
+    50% { 
+        color: #e42527; /* Cambia el fondo a un color brillante en la mitad de la animación */
+   }
+    100% {
+        background-color: transparent; /* Vuelve al estado inicial sin fondo al final */
+    }
+}
+
+

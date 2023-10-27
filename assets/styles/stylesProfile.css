@@ -1,0 +1,525 @@
+/* Fuentes para todo el documento */
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para el body */
+body {
+    background-color: #000000;
+    overflow-x: hidden;
+    overflow-x: hidden;
+    color: white;
+}
+
+/* ~~ NavBar Styles ~~ */
+.custom-navbar {
+    background-color: #141414;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.logo {
+    /* Estilo para el logo en la barra de navegación */
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+    text-align: left;
+}
+.containerProfile {
+    /* Estilo para el contenedor del perfil en la barra de navegación */
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.perfil {
+    /* Estilo para la imagen de perfil en la barra de navegación */
+    width: 45px;
+    border-radius: 50%
+}
+/* Estilo para el menú de configuración */
+.config-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #000000;
+    box-shadow: 0 0 10px #e42527;
+    z-index: 1;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.config-menu ul {
+    /* Estilo para la lista del menú de configuración */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 260px;
+}
+.config-menu ul li {
+    /* Estilo para los items del menú de configuración */
+    padding: 10px;
+    text-align: left;
+    align-items: center;
+    color: #ffffff;
+}
+.config-menu ul li:hover {
+    /* color de fondo al pasar el ratón */
+    background-color: #e4252846;
+    border-radius: 5px;
+    margin: 5px;
+}
+.config-menu ul li a {
+    /* Estilo para los links del menú de configuración */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: large;
+}
+.config-menu ul li img {
+    /* Estilo para los iconos del menú de configuración */
+    height: 20px;
+    margin-bottom: 5px;
+}
+.config-menu ul hr {
+    /* color de fondo al pasar el ratón */
+    margin: 5px 0;
+    border: solid 2px #141414;
+    margin-inline: 10px 30px;
+}
+/* ~~ End NavBar Styles ~~ */
+
+
+/* Personal info */
+.contSuperior {
+    height: 450px;
+    overflow: hidden;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.contProfileBack {/*Contenedor de la imagen de fondo*/
+    width: 1440px;
+    height: 300px;
+    z-index: 1;
+}
+.contProfileBack img {/*Imagen de fondo*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contProfilePick {/*Contenedor de la imagen de perfil*/
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    /* Centra horizontalmente */
+    transform: translateX(-50%);
+    /* Ajusta para centrar horizontalmente */
+    z-index: 2;
+}
+.contProfilePick img {/*Imagen de perfil*/
+    border-radius: 50%;
+    width: 200px;
+    border: 2px solid rgb(0, 0, 0);
+}
+.contNickname {/*Contenedor del nickname*/
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    /* Centra horizontalmente */
+    transform: translateX(-50%);
+    /* Ajusta para centrar horizontalmente */
+    z-index: 2;
+}
+.contNickname h1 {/*Nickname*/
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/* PARTE DOS */
+.rowFather {
+    margin: 0 0 50px 0;
+}
+/* Columna izquierda */
+.colLeft {
+    padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+/* Scroll Juegos y Logros */
+.containerJuegosLogros {
+    width: 92%;
+}
+
+.containerJuegosLogros h2 {
+    position: relative;
+    left: 10px;
+}
+
+.scrollMenuJuegos {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 0;
+}
+
+.scrollMenuJuegos::-webkit-scrollbar {
+    height: 0;
+    /* Ancho de la barra de desplazamiento en navegadores WebKit (Chrome, Safari) */
+}
+
+.menuJuegos {
+    padding: 0;
+    margin: 0;
+}
+
+.menuJuegos li {
+    display: inline-block;
+    /* Muestra los elementos en línea */
+    margin-right: 25px;
+}
+
+.containerJuego {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.juego {
+    width: 180px;
+}
+
+.containerLogros {
+    height: 40px;
+    position: relative;
+    top: -20px;
+}
+
+.logro {
+    margin-inline: 6px;
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #aaaaaa;
+}
+
+#verMasJuegos {
+    width: 100px;
+    vertical-align: baseline;
+    margin-bottom: 50%;
+    margin-inline: 0;
+}
+
+/* Scroll Amigos */
+.containerAmigos {
+    width: 92%;
+    margin-top: 10px;
+}
+
+.containerAmigos h2 {
+    position: relative;
+    left: 10px;
+}
+
+.scrollMenuAmigos {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 0;
+    padding-bottom: 15px;
+}
+
+.scrollMenuAmigos::-webkit-scrollbar {
+    height: 0;
+    /* Ancho de la barra de desplazamiento en navegadores WebKit (Chrome, Safari) */
+}
+
+.menuAmigos {
+    padding: 0;
+    margin: 0;
+}
+
+.menuAmigos li {
+    display: inline-block;
+    /* Muestra los elementos en línea */
+    margin-right: 20px;
+}
+
+.menuAmigos img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+#verMasAmigos {
+    border-radius: 10%;
+    width: 100px;
+}
+
+
+
+/*Inicio Modal*/
+.modal {
+    display: none;
+    /*position: absolute; /* Cambiar a "fixed" si necesitas que el modal siga visible al desplazarse la página */
+    top: 50%;
+    /* Alineado verticalmente en el centro */
+    left: 50%;
+    /* Alineado horizontalmente en el centro */
+    transform: translate(-50%, -50%);
+    /* Centra el modal */
+    width: 700px;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1a1a1a;
+    max-height: 390px;
+    border-radius: 15px;
+}
+.modal-content #close-modal {
+    width: 5%;
+    padding: 0;
+    position: relative;
+    left: 98%;
+    transform: translate(-100%);
+    margin: 10px 0 10px 0;
+    border-radius: 20%;
+    background-color: #5d5d5d;
+    border-color: #000000b7;
+}
+.modal-content #close-modal:hover {
+    background-color: #ff000074;
+    border-color: #000000b7;
+}
+.modal-content #post-text {
+    width: 95%;
+    max-height: 200px;
+    /* Altura máxima */
+    min-height: 200px;
+    /* Altura mínima */
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #5d5d5d;
+    border-color: #000000b7;
+    color: white;
+    font-size: 20px;
+}
+#imagePreview {
+    max-height: 120px;
+    width: max-content;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.containerButtonsModal {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 10px 0;
+    padding: 0 10px;
+    position: relative;
+    left: 100%;
+    bottom: 50%;
+    transform: translate(-110%);
+}
+/* Cambiar la posición cuando haya una imagen previa */
+.with-image {
+    bottom: 90px;
+}
+.custom-file-input {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.custom-file-input img {
+    width: 50px;
+    margin: 0 10px 0 0;
+}
+.custom-file-input input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    /* Esto puede variar según tus preferencias */
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.containerButtonsModal #post-button {
+    border-radius: 10px;
+    height: 40px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: none;
+    /* Inicialmente oculto */
+}
+/*Fin Modal*/
+
+
+
+/* Columna Derecha */
+.colRight {
+    margin-top: 10px;
+    padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+.colRight .row {
+    width: 100%;
+}
+/* Crear Publicación*/
+.containerMadePubli {
+    padding: 0;
+    margin-top: 40px;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    position: relative; /* Importante para posicionar elementos absolutos */
+}
+#madePubliBtn {
+    background-color: #8a8a8a80;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: left;
+    width: 90%;
+    height: 100%;
+    position: relative; /* Importante para posicionar elementos hijos */
+    display: flex;
+    justify-content: space-between; /* Alinea .containerButtons a la derecha */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+#madePubliBtn:hover {
+    background-color: #8a8a8ae3;
+    /* Cambia el fondo del botón a rojo al pasar el mouse */
+    color: white;
+    /* Cambia el color del texto a blanco al pasar el mouse */
+}
+.containerButtons {
+    width: 160px;
+    position: absolute; /* Posición absoluta para la esquina inferior derecha*/
+    bottom: 10%;
+    right: 8%;
+    display: flex; /* Alinear contenido dentro de este container */
+    justify-content: space-between; /* Espacio entre los contenidos */
+}
+.containerButtons img {
+    width: 50px;
+}
+@media (max-width: 450px) {
+    .containerButtons {
+        height: 35px;
+    }
+    .containerButtons img {
+        width: 40px;
+    }
+}
+/* Publicaciones */
+.card {
+    /*background-color: #141414;
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;*/
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    /* Ancho de las tarjetas */
+    height: auto;
+    margin: 20px;
+    margin-top: 50px;
+    /* Centra las tarjetas horizontalmente */
+    background-color: #141414;
+    border-color: #a8a8a8;
+    padding: 10px;
+    border-radius: 5%;
+	border:2px solid #141414; 
+	box-shadow: 0 0 10px #5d5d5d;
+}
+.contPersonalInfoPubli {
+    /*display: flex;
+    justify-content: left;
+    margin-bottom: 5px;
+    padding-left: 10px;*/
+    display: flex;
+    justify-content: space-between;
+}
+.profile-img {
+    height: 50px;
+    border-radius: 50%;
+}
+.nicknamePrestige {
+    position: relative;
+    left: 20px;
+    bottom: 5px;
+    flex:1;
+}
+.nicknamePubli {
+    font-size: 20px;
+    color: #ffffff;
+}
+.prestigePubli {
+    font-size: 15px;
+    margin: 0;
+    color: #ffffff;
+}
+
+.datePubli{
+    color: #ffffff;
+}
+.deletePubli {
+   /* position: relative;
+    left: 450px;
+    bottom: 0;*/
+    width: 40px;
+    height: max-content;
+    
+}
+/*.contTextPubli {
+padding-inline: 15px;
+}*/
+.textPubli {
+    font-size: 25px;
+    color: #ffffff;
+}
+.contImgPubli {
+    margin-top: 10px;
+}
+.imgPubli {
+    width: 100%;
+    border-radius: 5px;
+}
+.contReactions {
+    /*width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 200px;*/
+    display: flex;
+    justify-content: space-evenly;
+}
+.contReactions img {
+    width: 40px;
+}

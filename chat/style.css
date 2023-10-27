@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+
+/* CSS Document */
+html {
+	font: 25px ;
+	color: #a8a8a8;
+	text-align:center;
+	font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+body{
+	background-color: #000 !important;
+	
+}
+
+/* Barra de navegación */
+.custom-navbar {
+    background-color: #141414;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.logo { /* Estilo para el logo en la barra de navegación */
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+    text-align: left;
+}
+.containerProfile { /* Estilo para el contenedor del perfil en la barra de navegación */
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.perfil {   /* Estilo para la imagen de perfil en la barra de navegación */
+    width: 45px;
+    border-radius: 50%
+}
+/* Estilo para el menú de configuración */
+.config-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #000000;
+    box-shadow: 0 0 10px #e42527;
+    z-index: 1;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.config-menu ul {   /* Estilo para la lista del menú de configuración */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 260px;
+}
+.config-menu ul li {    /* Estilo para los items del menú de configuración */
+    padding: 10px;
+    text-align: left;
+    align-items: center;
+}
+.config-menu ul li:hover {    /* color de fondo al pasar el ratón */
+    background-color: #e4252846;
+    border-radius: 5px;
+    margin: 5px;
+}
+.config-menu ul li a {  /* Estilo para los links del menú de configuración */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: large;
+}
+.config-menu ul li img{    /* Estilo para los iconos del menú de configuración */
+    height: 20px;
+    margin-bottom: 5px;
+}
+.config-menu ul hr {    /* color de fondo al pasar el ratón */
+    margin: 5px 0;
+    border: solid 2px #000000;
+    margin-inline: 10px 30px;
+}
+/*termiman estilos de navbar*/
+
+
+form, p, span {
+	color: #a8a8a8;
+	margin:0;
+	padding:0; }
+
+input { font:20px;
+}
+
+a {
+	color:#ea2425 !important;
+	text-decoration:none !important; }
+
+	a:hover { text-decoration:underline; }
+
+#wrapper, #loginform {
+	margin:0 auto;
+	padding-bottom:25px;
+	background:#141414;
+	width:604px;
+	border:2px solid #000000; 
+	box-shadow: 0 0 10px #e42527;}
+
+#loginform { padding-top:25px; }
+
+	#loginform p { margin: 10px; }
+
+#chatbox {
+	text-align:left;
+	margin:0 auto;
+	margin-bottom:25px;
+	padding:10px;
+	background:#141414;
+	height:470px;
+	width:530px;
+	border:1px solid #141414;
+	box-shadow: 0 0 10px #e42527;
+	overflow:auto; }
+
+#usermsg {
+	width:575px;
+	border:1px solid #d89898; 
+	align-items: center;
+}
+	
+
+#submit { width: 100px; }
+
+.error { color: #ff0000; }
+
+#menu { padding:12.5px 25px 12.5px 25px; }
+
+.welcome { float:left; }
+
+.logout { float:right; }
+
+.msgln { margin:0 0 2px 0; }
+
+.form-control{
+    background-color: #141414 !important;
+color: #a8a8a8 !important;
+border:1px solid #d89898 !important; 
+}
