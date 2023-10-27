@@ -141,19 +141,19 @@ document.addEventListener('DOMContentLoaded', () => {
             
     } else { // Opciones para usuarios sin sesión iniciada
         logo.innerHTML = `
-            <a class="navbar-brand" href=index.html">
-            <img src="assets/images/logoBlanco.png" alt="logo" class="logo">
+            <a class="navbar-brand" href=./index.html">
+            <img src="./assets/images/logoBlanco.png" alt="logo" class="logo">
             </a>
             `;
         profileImg.innerHTML = `
-            <img src="assets/images/loginBlanco.png" alt="" class="perfil" id="profile-img">
+            <img src="./assets/images/loginBlanco.png" alt="" class="perfil" id="profile-img">
             `;
         configMenu.innerHTML = `
             <ul>
                 <li id="aboutUs" style="cursor: pointer;">
                     <div class="row d-flex justify-content-between">
                         <div class="col-2">
-                            <img src="assets/images/aboutUs.svg" alt="">
+                            <img src="./assets/images/aboutUs.svg" alt="">
                         </div>
                     <div class="col-10">
                         <span>Acerca de nosotros</span>
